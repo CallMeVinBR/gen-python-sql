@@ -1,7 +1,8 @@
 import random
-import mysql.connector
+import mysql.connector # pip install mysql-connector-python
 import datetime 
 
+# DB Connection:
 big_dataDB = mysql.connector.connect(
     host = "localhost",
     user = "root",

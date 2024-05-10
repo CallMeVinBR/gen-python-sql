@@ -1,5 +1,5 @@
 # gen-python-sql
-- Atualmente trabalhando na tradução do código para inglês.
+- Atualmente trabalhando na tradução do código para o inglês.
 - English translation in development.
 
 WARNING: make sure to change the database connection in the main.py file, as well as the .pbix file, according to your settings for the code to work.

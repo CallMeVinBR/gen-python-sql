@@ -1,5 +1,5 @@
-# gen-python-sql
-Para executar o código corretamente, execute o seguinte código no prompt pelo VS Code:
+# Gerador de pessoas fictícias -- Python
+Para executar o código corretamente, execute o seguinte código no prompt:
 ```
 pip install mysql-connector-python
 ```

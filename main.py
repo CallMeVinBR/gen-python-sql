@@ -11,7 +11,7 @@ big_dataDB = mysql.connector.connect(
 
 alturas = [random.uniform(1.30, 2.15) for _ in range(1000)]
 
-estados = [
+ESTADOS = [
     "Acre",
     "Alagoas",
     "Amapá",
@@ -85,7 +85,7 @@ if input("================\nDeseja continuar? S/N\nR: ").upper() == "S":
         # Optei pelo máximo ser este para que as pessoas geradas tenham no mínimo 10 anos de idade
         ano = random.randint(getAno.year - 100, getAno.year - 10)
         
-        cursor.execute(f"insert into pessoas(altura, sexo, estado, data_nascimento) values ({alturas[valA]:.2f}, '{sexo[valS]}', '{estados[valU]}', '{ano}-{mes}-{dia}')")
+        cursor.execute(f"insert into pessoas(altura, sexo, estado, data_nascimento) values ({alturas[valA]:.2f}, '{sexo[valS]}', '{ESTADOS[valU]}', '{ano}-{mes}-{dia}')")
         big_dataDB.commit()
         print(f"ID: {cursor.lastrowid} inserted.")
 
